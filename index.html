@@ -12,18 +12,22 @@
 <body>
     <div class="weather-app">
     <header>
-        <form>
-            <input type="search" placeholder="Enter a city.." required/>
-            <input type="submit" value="search"/>
+        <form class="search form">
+            <input type="search" placeholder="Enter a city.." required class="search-form-input"/>
+            <input type="submit" value="Search" class="search-form-button"/>
         </form>
     </header>
     <main>
-    <h1>Harare</h1>
-    <p>Tuesday 14:25, generally clear
+        <div class="weather-app-data">
+            <div>
+    <h1 class="weather-app-city">Harare</h1>
+    <p class="weather-app-deatails">Tuesday 14:25, generally clear
         <br />
         Humidity: 15%  , Wind: 13km/h
         </p>
-        ☀️28&deg;    
+        </div>
+      <div class="weather-app-temperature">☀️28&deg;</div>  
+    </div>
     </p>
     </main>
     <footer>This project was coded by S Bhatasara</footer>
