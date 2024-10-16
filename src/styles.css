@@ -47,9 +47,11 @@ a {color: blueviolet;}
     font-size: 88px;
     margin-left: 5px;
     font-weight: lighter;
+    line-height: 88px;
 }
 .weather-app-icon {margin-top: 22px;
-font-size: 44px;}
+width: 10px;
+height: 88px;}
 .weather-app-unit {
     margin-top: 16px;
     font-size: 28px;

@@ -13,6 +13,9 @@ function refreshWeather(response) {
   temperatureElement.innerHTML = Math.round(temperature);
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
+
+  let iconElememt = document.querySelector("#icon");
+  iconElememt.innerHTML = `<img src="${response.data.condition.icon_url}"class=weather-app-icon/>`;
 }
 function searchCity(city) {
   let apiKey = "66be36afb0bfdbdtc4e9dd41a4603o8c";
@@ -38,6 +41,9 @@ function formatDate(date) {
     "Saturday",
   ];
   let day = days[date.getDay()];
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
   return `${day} ${hours}: ${minutes}`;
 }
 
