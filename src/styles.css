@@ -50,8 +50,10 @@ a {color: blueviolet;}
     line-height: 88px;
 }
 .weather-app-icon {margin-top: 22px;
-width: 10px;
-height: 88px;}
+width: 38px;
+height: 38px;
+display: block;
+margin: 0 auto;}
 .weather-app-unit {
     margin-top: 16px;
     font-size: 28px;
